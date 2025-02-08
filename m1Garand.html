@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M1 Garand Simulator</title>
-
+    <style>
+        .button {
+            padding: 15px 30px;
+            font-size: 16px;
+            margin: 5px;
+        }
+        #safetyButton {
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
     <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
         <img src="./m1Garand.png" alt="M1 Garand" width="90%">
         <div style="margin-top: 20px;"></div>
-        <button id="safetyButton" style="padding: 15px 30px; font-size: 16px; margin: 5px;background-color: red;" onclick="m1Garand.safetyToggle()">Safety Toggle</button>
-            <button style="padding: 15px 30px; font-size: 16px; margin: 5px;;" onclick="m1Garand.fire()">Fire</button>
-            <button style="padding: 15px 30px; font-size: 16px; margin: 5px;" onclick="m1Garand.reload()">Reload</button>
-            <button style="padding: 15px 30px; font-size: 16px; margin: 5px;" onclick="m1Garand.pullBolt()">Pull Bolt</button>
-            <button style="padding: 15px 30px; font-size: 16px; margin: 5px;" onclick="m1Garand.disarm()">Disarm</button>
-        </div>
+        <button id="safetyButton" class="button" onclick="m1Garand.safetyToggle()">Safety Toggle</button>
+        <button class="button" onclick="m1Garand.fire()">Fire</button>
+        <button class="button" onclick="m1Garand.reload()">Reload</button>
+        <button class="button" onclick="m1Garand.pullBolt()">Pull Bolt</button>
+        <button class="button" onclick="m1Garand.disarm()">Disarm</button>
     </div>
 </body>
 <script src="Assignment1.js"></script>
